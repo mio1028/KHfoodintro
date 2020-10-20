@@ -27,7 +27,9 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- 連結JQuery Mobile -->
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="themes/201020.min.css"/>
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -49,10 +51,12 @@
 
             <h1>高雄有著很多好吃的美食...</h1>
             <p>讓我們一一的來介紹給你吧~</p>
-            <a href="#page01">傳統小吃</a>
-            <a href="#page02">特色餐廳</a>
-            <a href="#page03">夜市美食</a>
-            <a href="#page04">當地人推薦</a>
+            <a href="#page01" data-transition="slide">傳統小吃</a>
+            <a href="#page02" data-transition="slide">特色餐廳</a>
+            <a href="#page03" data-transition="slide">夜市美食</a>
+            <a href="#page04" data-transition="slide">當地人推薦</a>
+            <p></p>
+            <a href="#pageabout" data-transition="slide" data-role="button">關於我們</a>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -62,6 +66,14 @@
         </div><!-- /footer -->
 
     </div><!-- /page00 -->
+
+    <div data-role="page" data-dialog="true" id="pageabout">
+        <div data-role="main" class="ui-content">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit sint placeat molestias, in rem labore eveniet quaerat facere dolores aut voluptate nobis deserunt molestiae suscipit? Facere nulla nisi dolorum!</p>
+            <a href="#page00" data-transition="flip" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">回到主畫面</a>
+        </div>
+    </div><!-- pageabout -->
 
     <div data-role="page" id="page01">
 
@@ -75,7 +87,7 @@
 
             <h1>高雄的傳統小吃各式各樣，總有一味得你心</h1>
             <p>丹丹漢堡－必吃漢堡+麵線羹的完美絕配！</p>
-            <a href="#page00">回到主畫面</a>
+            <a href="#page00" data-transition="flip" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">回到主畫面</a>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -98,7 +110,7 @@
 
             <h1>高雄的特色餐廳~~</h1>
             <p>碳佐麻里 南部cp值高的燒烤餐廳</p>
-            <a href="#page00">回到主畫面</a>
+            <a href="#page00" data-transition="flip" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">回到主畫面</a>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -121,7 +133,7 @@
 
             <h1>高雄的夜市也有很多，也充斥著各種小吃</h1>
             <p>瑞豐夜市、六合夜市等等等，在夜晚販賣著各式美味餐點</p>
-            <a href="#page00">回到主畫面</a>
+            <a href="#page00" data-transition="flip" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">回到主畫面</a>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -144,7 +156,7 @@
 
             <h1>看完這抹多美食、餐廳、甚至是夜市小吃，我們來看看當地人推薦吧!</h1>
             <p>其實還有很多地方的巷弄美食只有當地住戶才知道的，讓我們慢慢發掘吧!!</p>
-            <a href="#page00">回到主畫面</a>
+            <a href="#page00" data-transition="flip" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">回到主畫面</a>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
